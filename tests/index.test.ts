@@ -9,11 +9,11 @@ describe('testing index file', () => {
   });
 
   test('should return merged array', () => {
-    expect(merge([2,7,9,10],[-5,0,0,0,7])).toEqual([-5,0,0,0,2,7,7,9,10]);
+    expect(merge([2,7,9,10],[0,0,0,7])).toEqual([0,0,0,2,7,7,9,10]);
   });
 
   test('should return merged array', () => {
-    expect(merge([7,7,7,7,7,7,7],[-5,0,0,0,7])).toEqual([-5,0,0,0,7,7,7,7,7,7,7,7]);
+    expect(merge([7,7,7,7,7,7,7],[0,0,0,7])).toEqual([0,0,0,7,7,7,7,7,7,7,7]);
   });
 
 

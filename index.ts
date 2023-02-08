@@ -24,3 +24,16 @@ export function merge(collection_1: number[],collection_2:number[] ): number[] {
 
     return ansArray;
 }
+
+console.log("collection_1 = [3,7,11]" );
+console.log("collection_2 = [0,1,1,99]" );
+console.log("answer = ["+merge([3,7,11],[0,1,1,99]) + "]\n");
+console.log("collection_1 = [2,7,9,10]" );
+console.log("collection_2 = [0,0,0,7]" );
+console.log("answer = ["+merge([2,7,9,10],[0,0,0,7]) + "]\n");
+console.log("collection_1 = [7,7,7,7,7,7,7]" );
+console.log("collection_2 = [0,0,0,7]" );
+console.log("answer = ["+merge([7,7,7,7,7,7,7],[0,0,0,7]) + "]\n");
+console.log("collection_1 = []" );
+console.log("collection_2 = []" );
+console.log("answer = ["+merge([],[]) + "]\n");
