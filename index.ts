@@ -16,7 +16,6 @@ export function merge(collection_1: number[],collection_2:number[] ): number[] {
         ansArray.push(collection_1[index1]);
         index1++;
     }
-    
     while( index2<collection_2.length ){
         ansArray.push(collection_2[index2])
         index2++;   

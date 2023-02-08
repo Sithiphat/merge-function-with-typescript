@@ -16,6 +16,9 @@ describe('testing index file', () => {
     expect(merge([7,7,7,7,7,7,7],[0,0,0,7])).toEqual([0,0,0,7,7,7,7,7,7,7,7]);
   });
 
+  test('should return merged array', () => {
+    expect(merge([5],[4])).toEqual([4,5]);
+  });
 
   test('should return array1 if array2 is empty', () => {
     expect(merge([2,7,9,10],[])).toEqual([2,7,9,10]);
@@ -24,5 +27,9 @@ describe('testing index file', () => {
   test('should return array2 if array1 is empty', () => {
     expect(merge([],[2,7,9,10])).toEqual([2,7,9,10]);
   });
-  
+
+  test('should return array2 if array1 is empty', () => {
+    expect(merge([],[1])).toEqual([1]);
+  });
+
 });
